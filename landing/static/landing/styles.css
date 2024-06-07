@@ -1,0 +1,60 @@
+body{
+    background: linear-gradient(-20deg, #FBCBEB 0%, #FBCBEB 100%, #FBCBEB 100%);
+    
+}
+
+nav , footer {
+    background: radial-gradient(329px at 3.1% 9.3%, rgb(251, 204, 235) 28.1%, rgba(221, 221, 221, 0.15) 100.7%);
+}
+.square-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+p {
+    margin: 0;
+}
+last-p {
+    margin-bottom: 10px;
+}
+.cute-box {
+    background-color: white;
+    border: 5px solid #ffb6c1; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.cute-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.text-center {
+    color: #ff69b4;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.carousel-inner .carousel-item {
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+.carousel-inner .active {
+    opacity: 1;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.btn-pink {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: #ff1493;
+    border-color: #ff1493;
+}

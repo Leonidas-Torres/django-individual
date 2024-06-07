@@ -1,0 +1,36 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container d-flex flex-column align-items-center mt-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="description-box mt-3 p-3 border rounded cute-box">
+                    <p class="text-center">Silla Gamer adaptable</p>
+                    <p class="text-center last-p">Ideal para largas sesiones de gaming</p>
+                </div>
+                <img src="{% static 'landing/silla-gamer.webp' %}" alt="item_1" class="d-block w-100 square-image">
+            </div>
+            <div class="carousel-item">
+                <div class="description-box mt-3 p-3 border rounded cute-box">
+                    <p class="text-center">Mouse Gamer Profesional</p>
+                    <p class="text-center last-p">Sube tu nivel de juego!</p>
+                </div>
+                <img src="{% static 'landing/mouse-gamer.png' %}" alt="item_1" class="d-block w-100 square-image">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+{% endblock %}

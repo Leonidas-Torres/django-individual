@@ -1,0 +1,16 @@
+{% extends "landing/base.html" %}
+{% load static %}
+
+{% block title %}Crear Perfil{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Crear Nuevo Perfil</h2>
+    <form method="post" enctype="multipart/form-data" class="cute-box p-3">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-pink">Guardar</button>
+    </form>
+    <a class="btn btn-secondary mt-3" href="{% url 'user_list' %}">Regresar a la Lista de Usuarios</a>
+</div>
+{% endblock %}
